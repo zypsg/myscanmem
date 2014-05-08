@@ -40,6 +40,7 @@ JNIEXPORT jint JNICALL Java_com_example_jnidemo_MainActivity_jniStaticShowMessag
 	return 1;
 }
 
+//add some notes
 JNIEXPORT  jint JNICALL Java_com_example_jnidemo_MainActivity_jniShowMessage(JNIEnv *env, jobject thiz,jobject thizb, jstring thizc, jstring thizd){
 	jclass cls = (*env)->FindClass(env,"com/example/jnidemo/MainActivity");
 	if(cls != NULL){
