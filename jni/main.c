@@ -5,15 +5,21 @@
  Copyright (C) 2009           Eli Dupree <elidupree@charter.net>
  Copyright (C) 2009,2010      WANG Lu <coolwanglu@gmail.com>
 
+
+ 
  This program is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
  the Free Software Foundation; either version 2 of the License, or
  (at your option) any later version.
+ 
+
 
  This program is distributed in the hope that it will be useful,
  but WITHOUT ANY WARRANTY; without even the implied warranty of
  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  GNU General Public License for more details.
+ 
+
 
  You should have received a copy of the GNU General Public License
  along with this program; if not, write to the Free Software
@@ -57,7 +63,9 @@ globals_t globals = {
         0,                      /* debug */
         0,                      /* backend */
         ANYINTEGER,             /* scan_data_type */
-        REGION_HEAP_STACK_EXECUTABLE_BSS, /* region_detail_level */
+
+        REGION_HEAP_STACK_EXECUTABLE_BSS, /* region_detail_level */ 
+
         0,                      /* detect_reverse_change */
         1,                      /* dump_with_ascii */
     }
@@ -207,7 +215,8 @@ int main(int argc, char **argv)
     else
     {
         // tell front-end our version
-        printf("%s\n", PACKAGE_VERSION);
+
+        printf("%s\n", PACKAGE_VERSION); 
     }
 
     if (getuid() != 0)
