@@ -1,0 +1,10 @@
+# constants 
+# should be defined by autotools
+
+VERSION = '@VERSION@'
+DATA_DIR = '@PKGDATADIR@'
+
+SETTINGS = {'scan_data_type':'int32'
+           ,'lock_data_type':'int32'
+           ,'search_scope'  : 1      # normal
+           }
